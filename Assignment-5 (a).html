@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Sign in</title>
+    <style>
+        body {
+            background-color: rgb(48, 25, 71);
+            color: rgb(194, 236, 236);
+        }
+
+        input {
+            background-color: rgb(228, 221, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: rgb(202, 73, 84);">Sign Up</h1>
+    <p id="description">This is a Demo signup page for ITC Hotels, also known as ITC Homes & Hotels, is one of the world's
+        largestand fast-growing
+        hospotality chains of leased and franchised hotels,Homes & rooms.Please fill the below form to Sign Up.
+    </p>
+    <div class="outer"
+        style="background-color: rgb(236, 151, 94); width: 40%; height: 65vh; padding: 5vh; margin: auto ; color: rgb(45, 43, 46); border-radius: 2rem;">
+        <form id="signup-form" action="/url-where-you-want-to-submit-form-data">
+            <label for="fname" name="fname" id="fname-label">First Name: </label>
+            <input type="text" for="fname" id="fname" placeholder="Jeff" required minlength="3"><br><br>
+            <label for="lname" name="lname" id="lname-label">Last Name: </label>
+            <input type="text" for="lname" id="lname" placeholder="Bezos" required minlength="3"><br><br>
+            <label for="email" name="email" id="email-label">E-mail: </label>
+            <input type="email" for="email" id="email" placeholder="abc1234@anymail.com" required minlength="3">
+            <br><br>
+            <label for="Phone" name="Phone" id="Phone-label">Phone number: </label>
+            <input type="tel" for="Phone" id="Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required max="10">
+            <small>Format: 1234567890</small>
+            <br><br>
+            <label for="age" name="age" id="number-label">Age:</label>
+            <input type="number" for="number" id="number" placeholder="18" min="0" max="150" required> <br><br>
+            <label for="dropdown" id="">Gender:</label>
+            <select id="dropdown">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <label for="password" name="password" id="password-label">Password: </label>
+            <input type="password" for="password" id="password" required>
+            <br><br>
+            <label for="repeat-password" name="repeat-password" id="repeat-password-label">Confirm Password: </label>
+            <input type="password" for="repeat-password" id="repeat-password" required>
+            <br><br>
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+            </p>
+            <label for="agree"><input id="agree" type="checkbox" name="agree" value="agree" required>I Agree</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input id="submit" type="submit" value="Sign Up">
+            <br><br> Already have account? Go to<a href="Assignment-5 (b).html"> Sign In </a>Page
+        </form>
+    </div>
+
+    <script src="confirm.js"></script>
+</body>
+
+</html>

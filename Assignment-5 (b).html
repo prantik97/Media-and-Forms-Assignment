@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <style>
+        body {
+            background-color: rgb(48, 25, 71);
+            color: rgb(194, 236, 236);
+        }
+
+        input {
+            background-color: rgb(228, 221, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: rgb(202, 73, 84);">Sign-In</h1>
+    <p id="description" style="text-align: center;">This is a sign in page for ITC Hotels
+    </p>
+    <div class="outer"
+        style="background-color: rgb(236, 151, 94); width: 40%; height: 30vh; padding: 5vh; margin: auto ; color: rgb(45, 43, 46); border-radius: 2rem;">
+        <form id="signup-form" action="/url-where-you-want-to-submit-form-data">
+            <label for="email" name="email" id="email-label">E-mail: </label>
+            <input type="email" for="email" id="email" placeholder="abc1234@anymail.com" required minlength="3">
+            <br><br>
+            <label for="password" name="password" id="password-label">Password: </label>
+            <input type="password" for="password" id="password" required>
+            <br><br>
+            <input id="submit" type="submit" value="Sign In">
+            <br><br>Don't have account? Go to<a href="Assignment-5 (a).html"> Sign Up </a>Page
+        </form>
+    </div>
+
+</html>
